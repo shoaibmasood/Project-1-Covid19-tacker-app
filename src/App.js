@@ -7,7 +7,6 @@ class App extends React.Component {
     return (
       <div className={styles.container}>
         <Header />
-        <h1>COVID 19 Tracker</h1>
       </div>
     );
   }

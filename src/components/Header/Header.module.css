@@ -1,4 +1,96 @@
-img {
-  width: 95vw;
-  height: 43vh;
+.header {
+  background-image: url('../../assests/wave.svg');
+  width: 100vw;
+  height: 40vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.heading {
+  margin-bottom: 5em;
+  font-size: 2em;
+  font-family: 'Vollkorn', serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1030px) {
+  .header {
+    width: 100vw;
+    height: 20vh;
+  }
+  .heading {
+    font-size: 1.7em;
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .heading {
+    font-size: 1.4em;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    width: 100vw;
+    height: 12vh;
+  }
+
+  .heading {
+    font-size: 0.8em;
+    margin-top: 2em;
+  }
+}
+/* version 1.0 */
+
+/* .img {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+.heading {
+  border: 2px solid red;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  font-size: 3vw;
+}
+
+.header {
+  width: 100vw;
+  height: 200px;
+} */
+/* ----------------------------------------------------------------------------------- */
+/* @media (max-width: 770px) {
+  .heading {
+    font-size: 5vw;
+  }
+} */
+
+/* h1 {
+  text-align: center;
+  position: absolute;
+  margin-top: 50px;
+} */
+/* 
+.header {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .heading {
+  position: absolute;
+  left: 45%;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
