@@ -12,7 +12,7 @@ class App extends React.Component {
 
   async componentDidMount() {
     const resp = await fetchedCardData();
-    // console.log(resp);
+    console.log(resp);
     this.setState({ globalData: resp });
   }
   render() {

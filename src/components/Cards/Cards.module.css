@@ -1,0 +1,51 @@
+.container {
+  /* margin: 100px 0; */
+}
+
+.items {
+  /* margin: 0 2; */
+}
+.confirmedcases,
+.activecases,
+.recoveredcases,
+.deathcases {
+  color: ghostwhite;
+}
+
+.ConfirmedContent {
+  background-color: rgb(160, 174, 192);
+  height: 8em;
+  width: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ActiveContent {
+  background-color: rgb(56, 83, 192);
+  height: 8em;
+  width: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.RecoveredContent {
+  background-color: rgb(93, 187, 120);
+  height: 8em;
+  width: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.DeathContent {
+  background-color: rgb(239, 100, 101);
+  height: 8em;
+  width: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
