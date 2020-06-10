@@ -2,11 +2,15 @@ import React from 'react';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 import { IconContext } from 'react-icons';
 import { FaHospitalAlt, FaHeartbeat, FaBed } from 'react-icons/fa';
-
+import { BeatLoader } from 'react-spinners';
 // import CountUp from 'react-countup';
 import styles from './Cards.module.css';
 
 const Cards = ({ data: { active, confirmed, date, deaths, recovered } }) => {
+  if (!active) {
+    return <BeatLoader size={24} color="MEDIUMPURPLE" loading />;
+  }
+
   const newDate = new Date(date).toDateString();
 
   return (
