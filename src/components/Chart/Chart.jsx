@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Line, Bar } from 'react-chartjs-2';
 
-const Chart = (data) => {
+const Chart = ({ data }) => {
   console.log(data);
   // const lineChart = (
   //     <line
@@ -14,7 +14,7 @@ const Chart = (data) => {
 
   return (
     <div>
-      <ul>{console.log(data.data.data.deaths)}</ul>
+      <ul></ul>
     </div>
   );
 };

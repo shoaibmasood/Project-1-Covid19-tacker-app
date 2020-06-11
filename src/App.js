@@ -9,20 +9,20 @@ import { fetchedCardData } from './api';
 class App extends React.Component {
   state = {
     globalData: {},
-    graphData: {},
+    graphData: [],
   };
 
   async componentDidMount() {
-    const resp = await fetchedCardData();
-
-    // console.log(resp);
+    const data = await fetchedCardData();
+    console.log(data);
     this.setState({
-      globalData: resp.data.data[0],
-      graphData: resp.data,
+      globalData: data[0],
+      graphData: data,
     });
   }
   render() {
-    // console.log(this.state.graphData);
+    console.log(this.state.graphData);
+
     const { globalData, graphData } = this.state;
     return (
       <div className={styles.container}>
