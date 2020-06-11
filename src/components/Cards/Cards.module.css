@@ -13,6 +13,16 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 330px) {
+  .ConfirmedContent,
+  .ActiveContent,
+  .RecoveredContent,
+  .DeathContent {
+    height: 5px;
+    width: 5px;
+  }
+}
 .confirmedcases,
 .activecases,
 .recoveredcases,

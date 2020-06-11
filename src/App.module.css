@@ -16,3 +16,9 @@ body {
     height: 1200px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .container {
+    height: 800px;
+  }
+}
