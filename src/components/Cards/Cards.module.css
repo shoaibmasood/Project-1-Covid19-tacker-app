@@ -1,9 +1,17 @@
 .container {
-  /* margin: 100px 0; */
+  margin-top: -50px;
 }
 
-.items {
-  /* margin: 0 2; */
+@media screen and (max-width: 1030px) {
+  .container {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .container {
+    margin-bottom: 20px;
+  }
 }
 .confirmedcases,
 .activecases,

@@ -1,7 +1,7 @@
 .header {
   background-image: url('../../assests/wave.svg');
-  width: 100vw;
-  height: 40vh;
+  width: 99vw;
+  height: 38vh;
   background-size: cover;
   background-position: top;
   display: flex;
@@ -19,6 +19,7 @@
 
 @media screen and (max-width: 1030px) {
   .header {
+    margin-top: -30em;
     width: 100vw;
     height: 20vh;
   }
@@ -32,6 +33,9 @@
   .heading {
     font-size: 1.4em;
     margin-top: 2em;
+  }
+  .header {
+    margin-top: -32em;
   }
 }
 

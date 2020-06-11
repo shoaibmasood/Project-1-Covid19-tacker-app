@@ -10,6 +10,7 @@ class App extends React.Component {
   state = {
     globalData: {},
     graphData: [],
+    loading: true,
   };
 
   async componentDidMount() {
@@ -18,16 +19,18 @@ class App extends React.Component {
     this.setState({
       globalData: data[0],
       graphData: data,
+      loading: false,
     });
   }
   render() {
-    console.log(this.state.graphData);
+    // console.log(this.state.graphData);
 
-    const { globalData, graphData } = this.state;
+    const { globalData, graphData, loading } = this.state;
+    console.log(globalData);
     return (
       <div className={styles.container}>
         <Header />
-        <Cards data={globalData} />
+        <Cards data={globalData} loader={loading} />
         <Chart data={graphData} />
       </div>
     );

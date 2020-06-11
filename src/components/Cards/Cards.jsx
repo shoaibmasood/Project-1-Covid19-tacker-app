@@ -6,8 +6,12 @@ import { BeatLoader } from 'react-spinners';
 // import CountUp from 'react-countup';
 import styles from './Cards.module.css';
 
-const Cards = ({ data: { active, confirmed, date, deaths, recovered } }) => {
-  if (!active) {
+const Cards = ({
+  data: { active, confirmed, recovered, deaths, date },
+  loader,
+}) => {
+  console.log(loader);
+  if (!active || undefined) {
     return <BeatLoader size={24} color="MEDIUMPURPLE" loading />;
   }
 
