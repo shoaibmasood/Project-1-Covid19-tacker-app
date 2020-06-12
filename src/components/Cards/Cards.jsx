@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 import { IconContext } from 'react-icons';
 import { FaHospitalAlt, FaHeartbeat, FaBed } from 'react-icons/fa';
 import { BeatLoader } from 'react-spinners';
-// import CountUp from 'react-countup';
+import CountUp from 'react-countup';
 import styles from './Cards.module.css';
 
 const Cards = ({
@@ -29,8 +29,7 @@ const Cards = ({
               Confirmed
             </Typography>
             <Typography variant="h5" className={styles.confirmedcases}>
-              {confirmed}
-              {/* <CountUp start={0} end={confirmed} duration={2.5} /> */}
+              <CountUp start={0} end={confirmed} duration={2.5} />
             </Typography>
             <Typography className={styles.confirmedcases}>{newDate}</Typography>
           </CardContent>
@@ -44,7 +43,7 @@ const Cards = ({
               Active
             </Typography>
             <Typography variant="h5" className={styles.activecases}>
-              {active}
+              <CountUp start={0} end={active} duration={2.5} />
             </Typography>
             <Typography className={styles.activecases}>{newDate}</Typography>
           </CardContent>
@@ -58,7 +57,7 @@ const Cards = ({
               Recovered
             </Typography>
             <Typography variant="h5" className={styles.recoveredcases}>
-              {recovered}
+              <CountUp start={0} end={recovered} duration={2.5} />
             </Typography>
             <Typography className={styles.recoveredcases}>{newDate}</Typography>
           </CardContent>
@@ -72,7 +71,7 @@ const Cards = ({
               Deaths
             </Typography>
             <Typography variant="h5" className={styles.deathcases}>
-              {deaths}
+              <CountUp start={0} end={deaths} duration={2.5} />
             </Typography>
             <Typography className={styles.deathcases}>{newDate}</Typography>
           </CardContent>
