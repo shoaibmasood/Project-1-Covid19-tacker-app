@@ -29,7 +29,7 @@ const Cards = ({
               Confirmed
             </Typography>
             <Typography variant="h5" className={styles.confirmedcases}>
-              <CountUp start={0} end={confirmed} duration={2.5} />
+              <CountUp start={0} end={confirmed} duration={2.5} separator="," />
             </Typography>
             <Typography className={styles.confirmedcases}>{newDate}</Typography>
           </CardContent>
@@ -43,7 +43,7 @@ const Cards = ({
               Active
             </Typography>
             <Typography variant="h5" className={styles.activecases}>
-              <CountUp start={0} end={active} duration={2.5} />
+              <CountUp start={0} end={active} duration={2.5} separator="," />
             </Typography>
             <Typography className={styles.activecases}>{newDate}</Typography>
           </CardContent>
@@ -57,7 +57,7 @@ const Cards = ({
               Recovered
             </Typography>
             <Typography variant="h5" className={styles.recoveredcases}>
-              <CountUp start={0} end={recovered} duration={2.5} />
+              <CountUp start={0} end={recovered} duration={2.5} separator="," />
             </Typography>
             <Typography className={styles.recoveredcases}>{newDate}</Typography>
           </CardContent>
@@ -71,7 +71,7 @@ const Cards = ({
               Deaths
             </Typography>
             <Typography variant="h5" className={styles.deathcases}>
-              <CountUp start={0} end={deaths} duration={2.5} />
+              <CountUp start={0} end={deaths} duration={2.5} separator="," />
             </Typography>
             <Typography className={styles.deathcases}>{newDate}</Typography>
           </CardContent>
