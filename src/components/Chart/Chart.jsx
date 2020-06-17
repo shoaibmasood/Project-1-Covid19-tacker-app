@@ -3,7 +3,9 @@ import { Line } from 'react-chartjs-2';
 import styles from './Chart.module.css';
 
 const Chart = ({ data }) => {
-  //   console.log(data);
+  // console.log(data);
+
+  data.reverse();
 
   const lineChart = data[0] ? (
     <Line
@@ -31,6 +33,8 @@ const Chart = ({ data }) => {
           },
         ],
       }}
+      // options={{ maintainAspectRatio: false }}
+      // height={}
     />
   ) : null;
 

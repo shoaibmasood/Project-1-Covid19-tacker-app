@@ -10,7 +10,7 @@ const Cards = ({
   data: { active, confirmed, recovered, deaths, date },
   loader,
 }) => {
-  console.log(loader);
+  // console.log(loader);
   if (!active || undefined) {
     return <BeatLoader size={24} color="MEDIUMPURPLE" loading />;
   }
